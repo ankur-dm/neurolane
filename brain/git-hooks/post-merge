@@ -1,0 +1,7 @@
+#!/bin/sh
+# After a merge lands on main, lanes that arrived with it are marked merged and
+# the neurons they marked for removal become obsolete. Commit the brain afterwards.
+branch=$(git rev-parse --abbrev-ref HEAD)
+case "$branch" in
+  main|master) node brain/neurolane.mjs lane sync ;;
+esac

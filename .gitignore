@@ -1,0 +1,10 @@
+# neurolane runtime and generated files
+brain/.state/
+brain/viewer.html
+brain/index.json
+brain/receptors.json
+
+# tooling
+node_modules/
+.DS_Store
+*.log

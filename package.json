@@ -1,0 +1,17 @@
+{
+  "name": "neurolane",
+  "version": "0.1.0",
+  "description": "A self-igniting neural knowledge graph that keeps AI coding agents' context small, with change lanes that tie every code change to the graph.",
+  "type": "module",
+  "license": "MIT",
+  "bin": { "neurolane": "brain/neurolane.mjs" },
+  "files": ["brain/neurolane.mjs", "brain/engine", "brain/setup", "brain/git-hooks", "brain/README.md", "CLAUDE.md"],
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test": "node --test brain/test/neurolane.test.mjs",
+    "check": "node brain/neurolane.mjs check",
+    "view": "node brain/neurolane.mjs view"
+  },
+  "repository": { "type": "git", "url": "git+https://github.com/ankur-dm/neurolane.git" },
+  "keywords": ["ai", "agents", "knowledge-graph", "claude-code", "context", "llm"]
+}
